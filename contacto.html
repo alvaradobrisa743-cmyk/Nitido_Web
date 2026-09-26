@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Nítido Web</title>
+<meta name="description" content="Escríbenos para tu página web: ubicación, horarios de atención y formulario de contacto directo a WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Nítido<span>.</span>Web</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      <li><a href="contacto.html" class="nav-cta">Pide tu cotización</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section" style="padding-bottom:1rem;">
+    <div class="container" style="max-width:680px;">
+      <span class="eyebrow">Contacto</span>
+      <h1>Hablemos sobre tu página web</h1>
+      <p>Escríbenos con los datos de tu negocio y el tipo de página que imaginas. Respondemos en horario de atención.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container contact-grid">
+
+      <!-- Información -->
+      <div>
+        <dl class="info-list">
+          <li>
+            <dt>Ubicación</dt>
+            <dd>Mérida, Yucatán, México<br>(atención remota para todo el país)</dd>
+          </li>
+          <li>
+            <dt>WhatsApp</dt>
+            <dd><a href="https://wa.me/529861089963" target="_blank" rel="noopener">+52 986 108 9963</a></dd>
+          </li>
+          <li>
+            <dt>Correo</dt>
+            <dd><a href="mailto:hola@nitidoweb.mx">hola@nitidoweb.mx</a></dd>
+          </li>
+        </dl>
+
+        <h3>Horarios de atención</h3>
+        <table class="hours-table">
+          <tr><td>Lunes a viernes</td><td>9:00 a.m. – 6:00 p.m.</td></tr>
+          <tr><td>Sábado</td><td>9:00 a.m. – 1:00 p.m.</td></tr>
+          <tr><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=M%C3%A9rida%2C%20Yucat%C3%A1n%2C%20M%C3%A9xico&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de ubicación en Mérida, Yucatán">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="form-panel">
+        <h3>Escríbenos y te contactamos por WhatsApp</h3>
+        <p style="color:var(--ink-muted); font-size:0.95rem;">Al enviar, se abrirá WhatsApp con tu mensaje ya redactado para que solo lo confirmes.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="correo">Correo (opcional)</label>
+            <input type="email" id="correo" name="correo">
+          </div>
+
+          <div class="field">
+            <label for="proyecto">Tipo de proyecto</label>
+            <select id="proyecto" name="proyecto">
+              <option value="Página esencial">Página esencial</option>
+              <option value="Página profesional">Página profesional</option>
+              <option value="Proyecto a medida">Proyecto a medida</option>
+              <option value="Aún no lo sé">Aún no lo sé</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Cuéntanos sobre tu negocio</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+          <p id="form-status" class="form-status" role="status"></p>
+          <p class="form-note">También puedes escribirnos directo al <a href="https://wa.me/529861089963" target="_blank" rel="noopener">+52 986 108 9963</a>.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<a href="https://wa.me/529861089963" class="whatsapp-float" target="_blank" rel="noopener">WhatsApp directo</a>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Nítido Web</div>
+        <p style="color:rgba(255,255,255,0.65); max-width:32ch;">Estudio de páginas web para negocios que quieren verse claros y profesionales en internet.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horarios</h4>
+        <ul>
+          <li>Lun a Vie: 9:00–18:00</li>
+          <li>Sábado: 9:00–13:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/529861089963" target="_blank" rel="noopener">WhatsApp +52 986 108 9963</a></li>
+          <li><a href="mailto:hola@nitidoweb.mx">hola@nitidoweb.mx</a></li>
+          <li>Mérida, Yucatán, México</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Nítido Web. Todos los derechos reservados.</span>
+      <span>Sitio de demostración — reemplaza textos e imágenes con los de tu negocio.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
